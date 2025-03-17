@@ -1,0 +1,105 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Footer = () => {
+  return (
+    <>
+    <footer id="footer" className="footer">
+  <div className="footer-newsletter">
+    <div className="container">
+      <div className="row justify-content-center text-center">
+        <div className="col-lg-6">
+          <h4>Join Our Newsletter</h4>
+          <p>
+            Join our newsletter to get the latest updates, exclusive offers,
+            and insider information directly to your inbox. Dont miss out
+            on exciting news and events!
+          </p>
+          <form action="forms/newsletter.php" method="post" className="php-email-form">
+            <div className="newsletter-form">
+              <input type="email" name="email" /><input type="submit" defaultValue="Subscribe" />
+            </div>
+            <div className="loading">Loading</div>
+            <div className="error-message" />
+            <div className="sent-message">
+              Your subscription request has been sent. Thank you!
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="container footer-top">
+    <div className="row gy-4">
+      <div className="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" className="d-flex align-items-center">
+          <img src="assets/img/netbg.png" alt style={{width: 150, height: 'auto'}} />
+        </a>
+        <div className="footer-contact pt-1">
+          <p className="mt-3">
+            <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+          </p>
+          <p><strong>Email:</strong> <span>info@example.com</span></p>
+        </div>
+      </div>
+      <div className="col-lg-2 col-md-3 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><i className="bi bi-chevron-right" /> <Link to="/">Home</Link></li>
+          <li>
+            <i className="bi bi-chevron-right" /> <Link to="/about">About us</Link>
+          </li>
+          <li>
+            <i className="bi bi-chevron-right" /> <Link to="/service">Services</Link>
+          </li>
+          <li>
+            <i className="bi bi-chevron-right" />
+            <a href="#">Terms of service</a>
+          </li>
+        </ul>
+      </div>
+      <div className="col-lg-2 col-md-3 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li>
+            <i className="bi bi-chevron-right" /> <Link to="/service">Web Development </Link>
+          </li>
+          <li>
+            <i className="bi bi-chevron-right" /> <Link to="/service">App Development </Link>
+          </li>
+          <li>
+            <i className="bi bi-chevron-right" />
+            <Link to="/service">AI & Automation</Link>
+          </li>
+          <li>
+            <i className="bi bi-chevron-right" />
+            <Link to="/service">Blockchain Dev</Link>
+          </li>
+          <li>
+            <i className="bi bi-chevron-right" /> <Link to="/service">Digital Marketing</Link>
+          </li>
+        </ul>
+      </div>
+      <div className="col-lg-4 col-md-12">
+        <h4>Follow Us</h4>
+        <p>
+          Stay connected with us through our social media channels for the
+          latest updates, news, and special offers. Join our community and
+          be part of the conversation!
+        </p>
+        <div className="social-links d-flex">
+          <a href><i className="bi bi-twitter-x" /></a>
+          <a href><i className="bi bi-facebook" /></a>
+          <a href><i className="bi bi-instagram" /></a>
+          <a href><i className="bi bi-linkedin" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </>
+  );
+};
+
+export default Footer;

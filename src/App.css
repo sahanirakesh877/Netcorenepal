@@ -1,0 +1,216 @@
+.category-btn {
+  padding: 15px 35px;
+  background: linear-gradient(45deg, red, black);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.breadcrumb-section {
+  background: linear-gradient(to bottom, #000000, #f21010);
+  margin-top: 89px;
+  position: relative;
+  overflow: hidden;
+}
+
+.breadcrumb {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.breadcrumb a:hover {
+  color: #f8d210;
+}
+
+/* Floating Icons */
+.floating-icons .icon {
+  position: absolute;
+  font-size: 2.5rem;
+  opacity: 0.7;
+  animation: float 4s infinite ease-in-out;
+}
+
+.star {
+  top: 10%;
+  left: 10%;
+  color: #fa0000;
+  animation-delay: 0.5s;
+}
+
+.rocket {
+  top: 50%;
+  right: 10%;
+  color: #ffffff;
+  animation-delay: 1s;
+}
+
+.bulb {
+  bottom: 10%;
+  left: 40%;
+  color: #00e1b4;
+  animation-delay: 1.5s;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+/* Navbar Base Styling */
+.navbar {
+
+  transition: all 0.3s ease;
+}
+/* .navbar-logo {
+  width: 80px; 
+  height: auto; 
+} */
+.logo-container {
+  width: 70px; 
+  height: 70px; 
+  background-color: white ;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  
+}
+
+.navbar-logo {
+  width:4rem; 
+  height: 100%;
+  border: 1px solid red;
+
+}
+
+
+.bg-black {
+  background-color: #000 !important; /* Black background */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  margin: 0 0.75rem;
+  transition: color 0.3s ease;
+}
+
+/* Mobile Toggle Button */
+.navbar-toggler {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background: #fff; /* White color for the icon */
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #fff; /* White color for the icon */
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+  transform: translateY(-6px);
+}
+
+.navbar-toggler-icon::after {
+  transform: translateY(6px);
+}
+
+/* Mobile Menu Styling */
+@media (max-width: 991.98px) {
+  /* Navbar Background and Text Color */
+  .navbar {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+  }
+
+  /* Navbar Toggler Button */
+  .navbar-toggler {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    color: black !important;
+  }
+
+  /* Navbar Toggler Icon */
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  /* Navbar Collapse (Mobile Menu) */
+  .navbar-collapse {
+    background: #0d0d0dfa; /* Gray background for mobile menu */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Navbar Links */
+  .navbar-nav .nav-item {
+    margin: 0.1rem 1rem;
+    text-align: start;
+    border-bottom: 1px solid rgb(92, 91, 91); /* Red border bottom for each item */
+  }
+
+  .navbar-nav .nav-link {
+    color: #d2d0d0 !important; /* Black text for mobile menu */
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+  }
+
+  /* Remove border from the last item */
+  .navbar-nav .nav-item:last-child {
+    border-bottom: none;
+  }
+}
+
+
+.bgchoose {
+  /* background: linear-gradient(135deg, #ff0000a3, #000000e6);
+  color: white;  */
+padding: 50px 0;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(138, 0, 7, 0.936) 99%);
+}
+
+
