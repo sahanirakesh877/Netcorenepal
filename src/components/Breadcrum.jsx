@@ -1,6 +1,12 @@
-import React from 'react';
-import { FaHome, FaAngleRight, FaStar, FaRocket, FaLightbulb } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import React from "react";
+import {
+  FaHome,
+  FaAngleRight,
+  FaStar,
+  FaRocket,
+  FaLightbulb,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 const Breadcrum = ({ currentPage }) => {
@@ -20,7 +26,10 @@ const Breadcrum = ({ currentPage }) => {
                 <FaHome className="me-1" /> Home
               </Link>
             </li>
-            <li className="breadcrumb-item active text-white" aria-current="page">
+            <li
+              className="breadcrumb-item active text-white"
+              aria-current="page"
+            >
               <FaAngleRight className="me-1" /> {currentPage}
             </li>
           </ol>
@@ -28,6 +37,6 @@ const Breadcrum = ({ currentPage }) => {
       </div>
     </section>
   );
-}
+};
 
 export default Breadcrum;

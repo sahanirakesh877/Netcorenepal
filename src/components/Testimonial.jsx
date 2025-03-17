@@ -14,8 +14,8 @@ const testimonials = [
       "Working with this team has been a game-changer for us. Their expertise and creativity exceeded our expectations. We're now reaching new heights thanks to their dedication!",
   },
   {
-    name: "Ajmaal Hussain",
-    role: "Designer",
+    name: "Mansi ",
+    role: "Bussiness Manager",
     image: "/assets/img/person/person-f-5.webp",
     review:
       "Their design solutions are innovative and impactful. My clients have been thrilled with the results. It’s been a pleasure collaborating with them!",
@@ -28,7 +28,7 @@ const testimonials = [
       "Their service has greatly boosted my sales and made my business thrive. I highly recommend their expertise to anyone looking to grow their business.",
   },
   {
-    name: "Prof. Ranzeth",
+    name: "Prof. John",
     role: "Principal",
     image: "/assets/img/person/person-m-12.webp",
     review:

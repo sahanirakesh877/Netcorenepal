@@ -1,22 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Breadcrum from "../components/Breadcrum";
 import WhyChoose from './../components/WhyCoose';
 
 const About = () => {
   const location = useLocation();
-  const [showWhyChoose, setShowWhyChoose] = useState(false);
-
+  
 
   useEffect(() => {
     window.scrollTo(0, 0);
-      // Delay rendering WhyChoose after location change
-      setShowWhyChoose(false);
-      const timer = setTimeout(() => {
-        setShowWhyChoose(true);
-      }, 300); // Adjust delay if needed
-  
-      return () => clearTimeout(timer);
   }, [location]);
 
   return (
@@ -82,10 +74,10 @@ const About = () => {
                   </span>
                 </li>
               </ul>
-              <Link to="/about" className="read-more">
+              {/* <Link to="/about" className="read-more">
                 <span>Read More</span>
                 <i className="bi bi-arrow-right" />
-              </Link>
+              </Link> */}
             </div>
             <div
               className="col-lg-6 order-1 order-lg-2 hero-img"
@@ -101,8 +93,7 @@ const About = () => {
           </div>
         </div>
       </section>
-     {/* Show WhyChoose only after location change */}
-     {showWhyChoose && <WhyChoose />}
+      <WhyChoose/>
     </>
   );
 };

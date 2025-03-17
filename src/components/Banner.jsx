@@ -18,9 +18,9 @@ const Banner = () => {
                 Innovative Solutions to Elevate Your Business
               </h1>
               <p className="fs-6 text-secondary">
-                Our team of skilled designers creates stunning, responsive
-                websites using the latest technologies, including Bootstrap, to
-                bring your vision to life.
+              Elevate your online presence with our cutting-edge web
+                solutions. We craft modern, responsive websites that drive
+                engagement and growth.
               </p>
               <div className="d-flex">
                 <Link to="/about" className="btn-get-started">

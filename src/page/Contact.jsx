@@ -1,13 +1,47 @@
-import React, { useEffect } from "react";
-import {  useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Breadcrum from "../components/Breadcrum";
 
 const Contact = () => {
-    const location = useLocation();
-    
-      useEffect(() => {
-        window.scrollTo(0, 0);
-      }, [location]);
+  const location = useLocation();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [status, setStatus] = useState({ loading: false, error: "", success: "" });
+ // Handle input change
+ const handleChange = (e) => {
+  setFormData({ ...formData, [e.target.name]: e.target.value });
+};
+ // Handle form submission
+ const handleSubmit = (e) => {
+  e.preventDefault();
+  setStatus({ loading: true, error: "", success: "" });
+
+  emailjs
+    .send(
+      "your_service_id",  // Replace with your EmailJS Service ID
+      "your_template_id", // Replace with your EmailJS Template ID
+      formData,
+      "your_public_key"   // Replace with your EmailJS Public Key
+    )
+    .then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        setStatus({ loading: false, error: "", success: "Your message has been sent!" });
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      },
+      (err) => {
+        console.error("FAILED...", err);
+        setStatus({ loading: false, error: "Failed to send message. Try again!", success: "" });
+      }
+    );
+};
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <>
       {/* Breadcrumb Section */}
@@ -74,13 +108,8 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-lg-7">
-              <form
-                action="forms/contact.php"
-                method="post"
-                className="php-email-form"
-                data-aos="fade-up"
-                data-aos-delay={200}
-              >
+            <form onSubmit={handleSubmit} className="php-email-form" data-aos="fade-up" data-aos-delay={200}>
+
                 <div className="row gy-4">
                   <div className="col-md-6">
                     <label htmlFor="name-field" className="pb-2">
@@ -92,6 +121,9 @@ const Contact = () => {
                       id="name-field"
                       className="form-control"
                       required
+                      value={formData.name}
+                      onChange={handleChange}
+
                     />
                   </div>
                   <div className="col-md-6">
@@ -104,6 +136,8 @@ const Contact = () => {
                       name="email"
                       id="email-field"
                       required
+                      value={formData.email}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-md-12">
@@ -116,6 +150,8 @@ const Contact = () => {
                       name="subject"
                       id="subject-field"
                       required
+                      value={formData.subject}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-md-12">
@@ -128,16 +164,15 @@ const Contact = () => {
                       rows={10}
                       id="message-field"
                       required
-                      defaultValue={""}
+                      value={formData.message}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-md-12 text-center">
-                    <div className="loading">Loading</div>
-                    <div className="error-message" />
-                    <div className="sent-message">
-                      Your message has been sent. Thank you!
-                    </div>
-                    <button type="submit">Send Message</button>
+                    {status.loading && <div className="loading">Sending...</div>}
+                    {status.error && <div className="error-message">{status.error}</div>}
+                    {status.success && <div className="sent-message">{status.success}</div>}
+                    <button type="submit" disabled={status.loading}>Send Message</button>
                   </div>
                 </div>
               </form>

@@ -570,7 +570,7 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  border: 1px solid red;
   font-size: 16px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-right: 10px;

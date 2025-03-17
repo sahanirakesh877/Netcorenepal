@@ -6,7 +6,7 @@ import Faq from "../components/Faq";
 import Testimonial from "../components/Testimonial";
 import TechnlogyUsed from "../components/TechnlogyUsed";
 import CallAction from "./../components/CallAction";
-import About from "./About";
+import AboutComp from "../components/AboutComp";
 import Contact from "./Contact";
 import WhyChoose from "../components/WhyCoose";
 
@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <About />
+      <AboutComp />
       <Service />
       <WorkProgress />
       <CallAction />
