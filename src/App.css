@@ -74,37 +74,17 @@
   }
 }
 
-
-
 /* Navbar Base Styling */
 .navbar {
-
   transition: all 0.3s ease;
-}
-/* .navbar-logo {
-  width: 80px; 
-  height: auto; 
-} */
-.logo-container {
-  width: 70px; 
-  height: 70px; 
-  background-color: white ;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-  
 }
 
 .navbar-logo {
-  width:4rem; 
-  height: 100%;
-  border: 1px solid red;
-
+  width: auto;
+  height: 80px;
+  background-color: white;
+  object-fit: contain;
 }
-
 
 .bg-black {
   background-color: #000 !important; /* Black background */
@@ -127,7 +107,7 @@
 .navbar-toggler-icon {
   background-image: none;
   position: relative;
-  width: 24px;
+  width: 30px;
   height: 2px;
   background: #fff; /* White color for the icon */
   transition: all 0.3s ease;
@@ -139,16 +119,16 @@
   position: absolute;
   width: 24px;
   height: 2px;
-  background: #fff; /* White color for the icon */
+  background: #ffffff; /* White color for the icon */
   transition: all 0.3s ease;
 }
 
 .navbar-toggler-icon::before {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
 }
 
 .navbar-toggler-icon::after {
-  transform: translateY(6px);
+  transform: translateY(8px);
 }
 
 /* Mobile Menu Styling */
@@ -205,12 +185,9 @@
   }
 }
 
-
 .bgchoose {
   /* background: linear-gradient(135deg, #ff0000a3, #000000e6);
   color: white;  */
-padding: 50px 0;
+  padding: 50px 0;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(138, 0, 7, 0.936) 99%);
 }
-
-

@@ -1,12 +1,10 @@
-  
-
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
+import logo from "/assets/img/logonet.jpg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -16,15 +14,11 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-black">
         <div className="container">
           {/* Logo */}
-          <div >
-          <Link
-            className="navbar-brand "
-            to="/"
-          >
-          <img src="/assets/img/logonet.jpg" alt="logo"  className="navbar-logo" />
-          </Link>
+          <div className="logo-container">
+            <Link to="/">
+              <img src={logo} alt="logo" className="navbar-logo" />
+            </Link>
           </div>
-         
 
           {/* Mobile Toggle Button */}
           <button
@@ -78,8 +72,7 @@ const Header = () => {
                   Career
                 </Link>
               </li>
-             
-             
+
               <li className="nav-item">
                 <Link
                   className="nav-link text-white hover-red"

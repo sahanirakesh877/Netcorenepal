@@ -1,13 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Breadcrum from "../components/Breadcrum";
 import WhyChoose from './../components/WhyCoose';
 
 const About = () => {
   const location = useLocation();
+  const [showWhyChoose, setShowWhyChoose] = useState(false);
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
+      // Delay rendering WhyChoose after location change
+      setShowWhyChoose(false);
+      const timer = setTimeout(() => {
+        setShowWhyChoose(true);
+      }, 300); // Adjust delay if needed
+  
+      return () => clearTimeout(timer);
   }, [location]);
 
   return (
@@ -92,7 +101,8 @@ const About = () => {
           </div>
         </div>
       </section>
-      <WhyChoose/>
+     {/* Show WhyChoose only after location change */}
+     {showWhyChoose && <WhyChoose />}
     </>
   );
 };
