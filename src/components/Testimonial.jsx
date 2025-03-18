@@ -34,6 +34,13 @@ const testimonials = [
     review:
       "Collaborating with this team was a fantastic experience. They helped me transform my freelancing career into a brand. I feel more confident and motivated than ever!",
   },
+  {
+    name: "Sarah Patel",
+    role: "Marketing Director",
+    image: "/assets/img/person/person-f-8.webp",
+    review:
+      "Their creative strategies have helped us reach a broader audience and strengthen our brand's presence. It's been an incredible journey working with such a talented team!",
+  },
 ];
 
 const Testimonial = () => {

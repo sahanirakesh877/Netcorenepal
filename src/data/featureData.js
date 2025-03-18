@@ -1,8 +1,8 @@
 import s1 from "/assets/img/s1.png";
 import s2 from "/assets/img/s2.png";
 import s3 from "/assets/img/s3.png";
-import s4 from "/assets/img/s4.png";
-import s5 from "/assets/img/s5.png";
+import s4 from "/assets/img/gds.png";
+ import s5 from "/assets/img/digim.png";
 import s6 from "/assets/img/s6.png";
 
 

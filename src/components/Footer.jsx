@@ -1,7 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
+
 
 const Footer = () => {
+  const [formData, setFormData] = useState({ email: "" });
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_4gxykwa",
+        "template_cx5hpe4",
+        formData,
+        "3kADefuEOzKY9Q73g"
+      )
+      .then(
+        () => {
+          alert('Your subscription request has been sent. Thank you!');
+
+          setMessage("Your subscription request has been sent. Thank you!");
+          setFormData({ email: "" });
+        },
+        () => {
+          alert('An error occurred. Please try again.');
+
+          setMessage("An error occurred. Please try again.");
+        }
+      )
+      .finally(() => setLoading(false));
+  };
   return (
     <>
     <footer id="footer" className="footer">
@@ -15,16 +51,31 @@ const Footer = () => {
             and insider information directly to your inbox. Dont miss out
             on exciting news and events!
           </p>
-          <form action="forms/newsletter.php" method="post" className="php-email-form">
-            <div className="newsletter-form">
-              <input type="email" name="email" /><input type="submit" defaultValue="Subscribe" />
-            </div>
-            <div className="loading">Loading</div>
-            <div className="error-message" />
-            <div className="sent-message">
-              Your subscription request has been sent. Thank you!
-            </div>
-          </form>
+
+
+
+          <form onSubmit={handleSubmit} className="php-email-form">
+      <div className="newsletter-form">
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+          placeholder="Enter your email"
+        />
+        <input type="submit" value="Subscribe" />
+      </div>
+      {loading && <div className="loading">Loading...</div>}
+      {message && (
+        <div className={message.includes("error") ? "error-message" : "sent-message"}>
+          {message}
+        </div>
+      )}
+    </form>
+
+
+
         </div>
       </div>
     </div>
