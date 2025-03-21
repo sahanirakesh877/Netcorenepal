@@ -9,6 +9,7 @@ import CallAction from "./../components/CallAction";
 import AboutComp from "../components/AboutComp";
 import Contact from "./Contact";
 import WhyChoose from "../components/WhyCoose";
+import Ceo from "../components/Ceo";
 
 const Home = () => {
   return (
@@ -16,15 +17,14 @@ const Home = () => {
       <Banner />
       <AboutComp />
       <Service />
+      <Ceo />
       <WorkProgress />
       <CallAction />
       <TechnlogyUsed />
-      <WhyChoose/>
+      <WhyChoose />
       <Testimonial />
       <Faq />
-      <Contact/>
-
-     
+      <Contact />
     </>
   );
 };
