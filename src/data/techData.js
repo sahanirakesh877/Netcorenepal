@@ -25,7 +25,7 @@ const technologies = [
   },
   {
     category: "web-development",
-    name: "Bootstrap",
+    name: "Wordpress",
     style: { color: "#00A8DB" },
     iconClass: "fab fa-wordpress fa-4x",
   },
