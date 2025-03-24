@@ -10,11 +10,13 @@ import AboutComp from "../components/AboutComp";
 import Contact from "./Contact";
 import WhyChoose from "../components/WhyCoose";
 import Ceo from "../components/Ceo";
+import VideoBanner from './../components/VideoBanner';
 
 const Home = () => {
   return (
     <>
       <Banner />
+      <VideoBanner/>
       <AboutComp />
       <Service />
       <Ceo />
