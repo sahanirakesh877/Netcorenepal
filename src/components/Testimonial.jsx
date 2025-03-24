@@ -50,8 +50,8 @@ const Testimonial = () => {
       <div className="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
         <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
+        Hear from our satisfied clients about their experiences and how our services 
+        made a difference in their journey.
         </p>
       </div>
       <div className="container" data-aos="fade-up" data-aos-delay={100}>
