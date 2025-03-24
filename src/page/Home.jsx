@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../components/Banner";
+// import Banner from "../components/Banner";
 import Service from "./Service";
 import WorkProgress from "../components/WorkProgress";
 import Faq from "../components/Faq";
@@ -15,9 +15,10 @@ import VideoBanner from './../components/VideoBanner';
 const Home = () => {
   return (
     <>
-      <Banner />
+      {/* <Banner /> */}
       <VideoBanner/>
       <AboutComp />
+     
       <Service />
       <Ceo />
       <WorkProgress />

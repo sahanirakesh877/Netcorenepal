@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import aboutIMG from '/assets/img/illustration/illustration-10.webp'
 const AboutComp = () => {
   return (
     <>
@@ -72,7 +73,7 @@ const AboutComp = () => {
                     data-aos-delay={200}
                   >
                     <img
-                      src="/assets/img/illustration/illustration-10.webp"
+                      src={aboutIMG}
                       className="img-fluid animated"
                       alt="About Us"
                     />
