@@ -74,7 +74,7 @@ const Career = () => {
           <div className="row ">
             {jobListings.map((job) => (
               <div className="col-md-4 mb-4 " key={job.id} data-aos="fade-up">
-                <div className="card h-100 bg-black text-white shadow-lg border-red">
+                <div className="card h-100 bg-dark text-white shadow-lg border-red">
                   <div className="card-body ">
                     <h5
                       className="card-title bg-light rounded-pill p-2 "

@@ -15,7 +15,7 @@ const Ceo = () => {
               </h2>
             </div>
             <p className="text-secondary">
-              Welcome to <strong>NETCORE Nepal</strong>, where innovation meets
+              Welcome to <strong className="text-danger">NETCORE Nepal</strong>, where innovation meets
               excellence. Our journey began with a vision to revolutionize the
               tech industry in Nepal, empowering businesses with cutting-edge
               technology and digital solutions. Today, we stand as a trusted
@@ -52,7 +52,9 @@ const Ceo = () => {
                 alt="CEO"
                 className="img-fluid  rounded shadow-lg"
               />
+             
             </div>
+            <h1 className="ceo-name">Arun Budhathoki</h1>
           </div>
         </div>
       </div>

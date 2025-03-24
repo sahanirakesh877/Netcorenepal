@@ -7,13 +7,6 @@ import "swiper/css/effect-fade";
 
 const testimonials = [
   {
-    name: "Rakesh Sahani",
-    role: "CEO & Founder",
-    image: "/assets/img/person/person-m-9.webp",
-    review:
-      "Working with this team has been a game-changer for us. Their expertise and creativity exceeded our expectations. We're now reaching new heights thanks to their dedication!",
-  },
-  {
     name: "Mansi ",
     role: "Bussiness Manager",
     image: "/assets/img/person/person-f-5.webp",
@@ -21,23 +14,31 @@ const testimonials = [
       "Their design solutions are innovative and impactful. My clients have been thrilled with the results. It’s been a pleasure collaborating with them!",
   },
   {
-    name: "Michael Lee",
+    name: "Rakesh Nishad",
+    role: "CEO & Founder",
+    image: "/assets/img/testimonial4.jpeg",
+    review:
+      "Working with this team has been a game-changer for us. Their expertise and creativity exceeded our expectations. We're now reaching new heights thanks to their dedication!",
+  },
+  
+  {
+    name: "Subham Shrestha",
     role: "Store Owner",
-    image: "/assets/img/person/person-f-12.webp",
+    image: "/assets/img/testimonial1.jpg",
     review:
       "Their service has greatly boosted my sales and made my business thrive. I highly recommend their expertise to anyone looking to grow their business.",
   },
   {
     name: "Prof. John",
     role: "Principal",
-    image: "/assets/img/person/person-m-12.webp",
+    image: "/assets/img/testimonial3.jpg",
     review:
       "Collaborating with this team was a fantastic experience. They helped me transform my freelancing career into a brand. I feel more confident and motivated than ever!",
   },
   {
     name: "Sarah Patel",
     role: "Marketing Director",
-    image: "/assets/img/person/person-f-8.webp",
+    image: "/assets/img/testimonil2.jpg",
     review:
       "Their creative strategies have helped us reach a broader audience and strengthen our brand's presence. It's been an incredible journey working with such a talented team!",
   },

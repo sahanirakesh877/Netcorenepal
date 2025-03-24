@@ -14,7 +14,7 @@
 
 .breadcrumb-section {
   background: linear-gradient(to bottom, #000000, #f21010);
-  margin-top: 89px;
+  margin-top: 82px;
   position: relative;
   overflow: hidden;
 }
@@ -81,14 +81,15 @@
 
 .navbar-logo {
   width: auto;
-  height: 80px;
-  background-color: white;
-  object-fit: contain;
+  height: 65px;
+}
+.header{
+  background-color: #ffffff;
 }
 
-.bg-black {
-  background-color: #000 !important; /* Black background */
-}
+/* .bg-black {
+  background-color: #000 !important; 
+} */
 
 /* Navbar Links */
 .navbar-nav .nav-link {
@@ -109,7 +110,7 @@
   position: relative;
   width: 30px;
   height: 2px;
-  background: #fff; /* White color for the icon */
+  background: #db0505; /* White color for the icon */
   transition: all 0.3s ease;
 }
 
@@ -119,7 +120,7 @@
   position: absolute;
   width: 24px;
   height: 2px;
-  background: #ffffff; /* White color for the icon */
+  background: #1b1b1b; /* White color for the icon */
   transition: all 0.3s ease;
 }
 
@@ -131,13 +132,37 @@
   transform: translateY(8px);
 }
 
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+  color: #000000 !important;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #f20d0d; /* Change to your preferred color */
+  left: 50%;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.nav-item:hover::after {
+  width: 45%;
+}
+
+
 /* Mobile Menu Styling */
 @media (max-width: 991.98px) {
   /* Navbar Background and Text Color */
   .navbar {
     background-color: white;
     color: black;
-    padding: 1rem;
+   
   }
 
   /* Navbar Toggler Button */

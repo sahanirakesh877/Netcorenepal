@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "/assets/img/logonet.jpg";
+// import logo from "/assets/img/logonet.jpg";
+import logo from "/assets/img/netcore.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,8 +11,8 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed-top border-bottom border-dark">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-black">
+    <div className="fixed-top shadow header">
+      <nav className="navbar navbar-expand-lg  ">
         <div className="container">
           {/* Logo */}
           <div className="logo-container">
@@ -38,7 +39,7 @@ const Header = () => {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link
-                  className="nav-link text-white hover-red"
+                  className="nav-link text-dark hover-red"
                   to="/"
                   onClick={toggleMenu}
                 >
@@ -47,7 +48,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link text-white hover-red"
+                  className="nav-link text-dark hover-red"
                   to="/about"
                   onClick={toggleMenu}
                 >
@@ -56,7 +57,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link text-white hover-red"
+                  className="nav-link text-dark hover-red"
                   to="/service"
                   onClick={toggleMenu}
                 >
@@ -65,7 +66,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link text-white hover-red"
+                  className="nav-link text-dark hover-red"
                   to="/career"
                   onClick={toggleMenu}
                 >
@@ -75,7 +76,7 @@ const Header = () => {
 
               <li className="nav-item">
                 <Link
-                  className="nav-link text-white hover-red"
+                  className="nav-link text-dark hover-red"
                   to="/contact"
                   onClick={toggleMenu}
                 >
