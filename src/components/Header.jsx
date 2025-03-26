@@ -11,7 +11,9 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed-top shadow header">
+    <>
+  
+      <div className="fixed-top shadow header">
       <nav className="navbar navbar-expand-lg  ">
         <div className="container">
           {/* Logo */}
@@ -88,6 +90,8 @@ const Header = () => {
         </div>
       </nav>
     </div>
+    </>
+  
   );
 };
 

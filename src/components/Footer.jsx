@@ -88,9 +88,9 @@ const Footer = () => {
         </a>
         <div className="footer-contact pt-1">
           <p className="mt-3">
-            <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+            <strong>Phone:</strong> <span>+977 9807890240 / +977 9815808426</span>
           </p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p><strong>Email:</strong> <span>netcorenepal@gmail.com</span></p>
         </div>
       </div>
       <div className="col-lg-2 col-md-3 footer-links">
@@ -139,10 +139,10 @@ const Footer = () => {
           be part of the conversation!
         </p>
         <div className="social-links d-flex">
-          <a href><i className="bi bi-twitter-x" /></a>
-          <a href><i className="bi bi-facebook" /></a>
-          <a href><i className="bi bi-instagram" /></a>
-          <a href><i className="bi bi-linkedin" /></a>
+          <a to='https://x.com/Netcorenepal' target="blank"><i className="bi bi-twitter-x" /></a>
+          <a href><i className="bi bi-facebook" target="blank"/></a>
+          <a href='https://www.instagram.com/netcorenepal/' target="blank"><i className="bi bi-instagram" /></a>
+          <a href=''><i className="bi bi-linkedin" target="blank"/></a>
         </div>
       </div>
     </div>

@@ -137,6 +137,10 @@
   position: relative;
   display: inline-block;
   color: #000000 !important;
+  font-size: 17px;
+}
+.nav-item:hover{
+  color: #db0505;
 }
 
 .nav-item::after {
