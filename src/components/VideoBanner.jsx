@@ -1,4 +1,5 @@
 import React from "react";
+import video from '/assets/img/bgvideo.mp4'
 
 const VideoBanner = () => {
   return (
@@ -19,7 +20,7 @@ const VideoBanner = () => {
       <div className="video-banner">
         {/* Background Video */}
         <video autoPlay muted loop className="video-bg">
-          <source src="../../public/assets/img/bgvideo.mp4" type="video/mp4" />
+          <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
