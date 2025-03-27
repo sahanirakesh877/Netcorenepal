@@ -92,7 +92,7 @@ const WhyChoose = () => {
           {/* Right Side - Image */}
           <div className="col-md-6 text-center ">
             <img
-              src="/assets/img/steps/steps-1.webp"
+              src="./img/steps/steps-1.webp"
               alt="Why Choose Us"
               className="img-fluid rounded shadow-lg"
               data-aos="fade-up"

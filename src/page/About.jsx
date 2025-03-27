@@ -15,7 +15,8 @@ const About = () => {
     <>
       {/* Breadcrumb Section */}
       {location.pathname === "/about" && <Breadcrum currentPage="About" />}
-
+      
+      
       {/* About Section */}
       <section id="about" className="about section">
         {/* Section Title */}

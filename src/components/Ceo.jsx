@@ -47,7 +47,7 @@ const Ceo = () => {
           <div className="col-md-5">
             <div className="ceo-image-wrapper" data-aos="fade-up">
               <img
-                src="/img/ceobg.png"
+                src="./img/ceobg.png"
                 alt="CEO"
                 className="img-fluid "
               />
