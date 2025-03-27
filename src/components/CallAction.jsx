@@ -8,7 +8,7 @@ const CallAction = () => {
         id="call-to-action"
         className="call-to-action section dark-background"
       >
-        <img src="/assets/img/bg/bg-8.webp" alt />
+        <img src="./img/bg/bg-8.webp" alt />
         <div className="container">
           <div className="row" data-aos="zoom-in" data-aos-delay={100}>
             <div className="col-xl-9 text-center text-xl-start">
