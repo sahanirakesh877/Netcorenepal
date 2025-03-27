@@ -1,5 +1,5 @@
 import React from "react";
-import video from '/assets/img/bgvideo.mp4'
+import video from '/img/bgvideo.mp4'
 
 const VideoBanner = () => {
   return (

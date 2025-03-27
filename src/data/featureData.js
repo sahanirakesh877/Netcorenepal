@@ -1,17 +1,17 @@
-import s1 from "/assets/img/s1.png";
-import s2 from "/assets/img/s2.png";
-import s3 from "/assets/img/s3.png";
-import s4 from "/assets/img/gds.png";
- import s5 from "/assets/img/digim.png";
-import s6 from "/assets/img/s6.png";
+import s1 from "/img/s1.png";
+import s2 from "/img/s2.png";
+import s3 from "/img/s3.png";
+import s4 from "/img/gds.png";
+ import s5 from "/img/digim.png";
+import s6 from "/img/s6.png";
 
 
-import web from "/assets/img/netcore/web.jpg"
-import ai from "/assets/img/netcore/ai.jpg"
-import market from "/assets/img/netcore/market.jpg"
-import design from "/assets/img/netcore/ui.jpg"
-import app from "/assets/img/netcore/app.jpg"
-import block from "/assets/img/netcore/block.jpg"
+import web from "/img/netcore/web.jpg"
+import ai from "/img/netcore/ai.jpg"
+import market from "/img/netcore/market.jpg"
+import design from "/img/netcore/ui.jpg"
+import app from "/img/netcore/app.jpg"
+import block from "/img/netcore/block.jpg"
 
 
 const features = [

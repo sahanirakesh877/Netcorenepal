@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import heroImg from "/assets/img/hero-img.png";
+import heroImg from "/img/hero-img.png";
 
 
 const Banner = () => {

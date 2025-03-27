@@ -85,7 +85,7 @@ const About = () => {
               data-aos-delay={200}
             >
               <img
-                src="/assets/img/illustration/illustration-10.webp"
+                src="/img/illustration/illustration-10.webp"
                 className="img-fluid animated"
                 alt="About Us"
               />

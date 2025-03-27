@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import aboutIMG from '/assets/img/illustration/illustration-10.webp'
+import aboutIMG from '/img/illustration/illustration-10.webp'
 const AboutComp = () => {
   return (
     <>
