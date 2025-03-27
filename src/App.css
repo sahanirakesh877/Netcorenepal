@@ -139,8 +139,8 @@
   color: #000000 !important;
   font-size: 17px;
 }
-.nav-item:hover{
-  color: #db0505;
+.nav-item .nav-link:hover{
+  color: #db0505 !important;
 }
 
 .nav-item::after {
@@ -184,7 +184,7 @@
 
   /* Navbar Collapse (Mobile Menu) */
   .navbar-collapse {
-    background: #0d0d0dfa; /* Gray background for mobile menu */
+    background: #0d0d0dfa; 
     position: absolute;
     top: 100%;
     left: 0;
@@ -198,7 +198,10 @@
   .navbar-nav .nav-item {
     margin: 0.1rem 1rem;
     text-align: start;
-    border-bottom: 1px solid rgb(92, 91, 91); /* Red border bottom for each item */
+    /* border-bottom: 1px solid #ff4d4d;  */
+    border-bottom: 1px solid;
+border-image: linear-gradient(to right,rgb(255, 0, 153), rgb(207, 9, 9)) 1;
+
   }
 
   .navbar-nav .nav-link {

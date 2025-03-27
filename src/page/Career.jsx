@@ -108,14 +108,15 @@ const Career = () => {
         <p className="text-dark">
           Send your CV to us via email for consideration.
         </p>
-        <button className="btn service-btn">
-          {" "}
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@netcorenepal.com.np&su=RESUME/ CV Submission&body=Please find my CV attached." target="_blank" className="btn service-btn">
+
           Drop Your CV here &nbsp;
           <i
             className="bi bi-upload"
             style={{ fontSize: "20px", color: "#fff" }}
           ></i>
-        </button>{" "}
+        </a>
       </section>
 
       {/* Benefits Section */}

@@ -90,7 +90,7 @@ const Footer = () => {
           <p className="mt-3">
             <strong>Phone:</strong> <span>+977 9807890240 / +977 9815808426</span>
           </p>
-          <p><strong>Email:</strong> <span>netcorenepal@gmail.com</span></p>
+          <p><strong>Email:</strong> <span>contact@netcorenepal.com.np</span></p>
         </div>
       </div>
       <div className="col-lg-2 col-md-3 footer-links">
@@ -141,8 +141,11 @@ const Footer = () => {
         <div className="social-links d-flex">
           <a to='https://x.com/Netcorenepal' target="blank"><i className="bi bi-twitter-x" /></a>
           <a href><i className="bi bi-facebook" target="blank"/></a>
+          <a href="https://wa.me/9815808426" target="_blank" rel="noopener noreferrer">
+<i className="bi bi-whatsapp" target="blank"/></a>
+
           <a href='https://www.instagram.com/netcorenepal/' target="blank"><i className="bi bi-instagram" /></a>
-          <a href=''><i className="bi bi-linkedin" target="blank"/></a>
+          <a href='https://www.linkedin.com/in/netcore-nepal-b3a487358/' target="blank"><i className="bi bi-linkedin" target="blank"/></a>
         </div>
       </div>
     </div>

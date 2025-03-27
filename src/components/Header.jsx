@@ -41,7 +41,7 @@ const Header = () => {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link
-                  className="nav-link text-dark hover-red"
+                  className="nav-link text-dark "
                   to="/"
                   onClick={toggleMenu}
                 >
@@ -50,7 +50,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link text-dark hover-red"
+                  className="nav-link text-dark "
                   to="/about"
                   onClick={toggleMenu}
                 >
@@ -59,7 +59,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link text-dark hover-red"
+                  className="nav-link text-dark "
                   to="/service"
                   onClick={toggleMenu}
                 >
@@ -68,7 +68,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link text-dark hover-red"
+                  className="nav-link text-dark "
                   to="/career"
                   onClick={toggleMenu}
                 >
@@ -78,7 +78,7 @@ const Header = () => {
 
               <li className="nav-item">
                 <Link
-                  className="nav-link text-dark hover-red"
+                  className="nav-link text-dark "
                   to="/contact"
                   onClick={toggleMenu}
                 >

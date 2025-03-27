@@ -92,7 +92,7 @@ const Contact = () => {
                   <i className="bi bi-geo-alt flex-shrink-0" />
                   <div>
                     <h3>Address</h3>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <p>Kathmandu, Nepal</p>
                   </div>
                 </div>
 
@@ -116,7 +116,7 @@ const Contact = () => {
                   <i className="bi bi-envelope flex-shrink-0" />
                   <div>
                     <h3>Email Us</h3>
-                    <p>netcorenepal@gmail.com</p>
+                    <p>contact@netcorenepal.com.np</p>
                   </div>
                 </div>
                 <div className="business-hours text-start mt-4 p-4 rounded shadow">

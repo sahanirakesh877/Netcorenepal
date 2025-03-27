@@ -7,19 +7,35 @@ import "swiper/css/effect-fade";
 
 const testimonials = [
   {
+    name: "Sarthak Rijal ",
+    role: "Restaurent Owner",
+    image: "/assets/img/sarthak.jpeg",
+    "review": "Working with this team has been a game-changer for our business. Their expertise and dedication helped us elevate our brand, and we couldn’t be happier with the results!"
+
+  },
+  {
+    name: "Rakesh Nishad",
+    role: "Content Creator",
+    image: "/assets/img/testimonial4.jpeg",
+    review:
+    "Their creative strategies have helped us reach a broader audience and strengthen our brand's presence. It's been an incredible journey working with such a talented team!",
+  },
+  {
+    name: "Sarah Patel",
+    role: "Marketing Director",
+    image: "/assets/img/testimonil2.jpg",
+    review:
+    "Working with this team has been a game-changer for us. Their expertise and creativity exceeded our expectations. We're now reaching new heights thanks to their dedication!",
+
+  },
+  {
     name: "Mansi ",
     role: "Bussiness Manager",
     image: "/assets/img/person/person-f-5.webp",
     review:
       "Their design solutions are innovative and impactful. My clients have been thrilled with the results. It’s been a pleasure collaborating with them!",
   },
-  {
-    name: "Rakesh Nishad",
-    role: "CEO & Founder",
-    image: "/assets/img/testimonial4.jpeg",
-    review:
-      "Working with this team has been a game-changer for us. Their expertise and creativity exceeded our expectations. We're now reaching new heights thanks to their dedication!",
-  },
+  
   
   {
     name: "Subham Shrestha",
@@ -35,13 +51,8 @@ const testimonials = [
     review:
       "Collaborating with this team was a fantastic experience. They helped me transform my freelancing career into a brand. I feel more confident and motivated than ever!",
   },
-  {
-    name: "Sarah Patel",
-    role: "Marketing Director",
-    image: "/assets/img/testimonil2.jpg",
-    review:
-      "Their creative strategies have helped us reach a broader audience and strengthen our brand's presence. It's been an incredible journey working with such a talented team!",
-  },
+ 
+  
 ];
 
 const Testimonial = () => {
