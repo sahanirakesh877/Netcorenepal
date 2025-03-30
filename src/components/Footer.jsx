@@ -84,13 +84,13 @@ const Footer = () => {
     <div className="row gy-4">
       <div className="col-lg-4 col-md-6 footer-about">
         <a href="index.html" className="d-flex align-items-center">
-          <img src="assets/img/netbg.png" alt style={{width: 150, height: 'auto'}} />
+          <img src="./img/netbg.png" alt style={{width: 150, height: 'auto'}} />
         </a>
         <div className="footer-contact pt-1">
           <p className="mt-3">
-            <strong>Phone:</strong> <span>+977 9807890240 / +977 9815808426</span>
+            <strong>Phone:</strong> <span> +977 9815808426</span>
           </p>
-          <p><strong>Email:</strong> <span>contact@netcorenepal.com.np</span></p>
+          <p><strong>Email:</strong> <span>netcorenepal.com.np</span></p>
         </div>
       </div>
       <div className="col-lg-2 col-md-3 footer-links">

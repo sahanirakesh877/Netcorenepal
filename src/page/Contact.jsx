@@ -104,7 +104,7 @@ const Contact = () => {
                   <i className="bi bi-telephone flex-shrink-0" />
                   <div>
                     <h3>Call Us</h3>
-                    <p>+977 9807890240 / +977 9815808426</p>
+                    <p> +977 9815808426</p>
                   </div>
                 </div>
 
@@ -116,7 +116,7 @@ const Contact = () => {
                   <i className="bi bi-envelope flex-shrink-0" />
                   <div>
                     <h3>Email Us</h3>
-                    <p>contact@netcorenepal.com.np</p>
+                    <p>netcorenepal.com.np</p>
                   </div>
                 </div>
                 <div className="business-hours text-start mt-4 p-4 rounded shadow">
