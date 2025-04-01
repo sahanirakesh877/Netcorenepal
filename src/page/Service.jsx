@@ -11,6 +11,8 @@ const Service = () => {
   }, [location]);
   return (
     <>
+     
+
       {location.pathname === "/service" && <Breadcrum currentPage="Service" />}
 
       <section id="services" className="services section light-background">

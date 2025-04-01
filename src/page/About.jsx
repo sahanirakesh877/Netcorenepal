@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import PropTypes from "prop-types";
+import {  useLocation } from "react-router-dom";
 import Breadcrum from "../components/Breadcrum";
-import WhyChoose from './../components/WhyCoose';
+import WhyChoose from "./../components/WhyCoose";
 
-const About = () => {
+const About = ({title}) => {
   const location = useLocation();
-  
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,10 +13,10 @@ const About = () => {
 
   return (
     <>
+    
       {/* Breadcrumb Section */}
       {location.pathname === "/about" && <Breadcrum currentPage="About" />}
-      
-      
+
       {/* About Section */}
       <section id="about" className="about section">
         {/* Section Title */}
@@ -86,7 +86,7 @@ const About = () => {
               data-aos-delay={200}
             >
               <img
-                src="/img/illustration/illustration-10.webp"
+                src="./img/illustration/illustration-10.webp"
                 className="img-fluid animated"
                 alt="About Us"
               />
@@ -94,9 +94,13 @@ const About = () => {
           </div>
         </div>
       </section>
-      <WhyChoose/>
+      <WhyChoose />
     </>
   );
+};
+// Define PropTypes to validate props
+About.propTypes = {
+  title: PropTypes.string.isRequired,
 };
 
 export default About;

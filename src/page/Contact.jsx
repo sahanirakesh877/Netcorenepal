@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Breadcrum from "../components/Breadcrum";
-// import { toast } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import { FaClock } from "react-icons/fa";
 
@@ -68,6 +66,8 @@ const Contact = () => {
 
   return (
     <>
+     
+
       {/* Breadcrumb Section */}
       {location.pathname === "/contact" && <Breadcrum currentPage="Contact" />}
       <section id="contact" className="contact section">

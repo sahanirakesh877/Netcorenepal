@@ -1,15 +1,9 @@
 import "./App.css";
+
 import { Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import GLightbox from "glightbox";
-// import "glightbox/dist/css/glightbox.css";
-// import Isotope from "isotope-layout";
-// import imagesLoaded from "imagesloaded";
-
 import Home from "./page/Home";
 import Service from "./page/Service";
 import Contact from "./page/Contact";
@@ -26,16 +20,17 @@ const App = () => {
 
   return (
     <>
-      
+     
+
       <Header />
       <main className="main">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/service" element={<Service />} />
+          <Route path="/" element={<Home title="Home | Netcore Nepal" />} />
+          <Route path="/service" element={<Service  title="Services | Netcore Nepal"/>} />
           <Route path="/service/:title" element={<ServiceDetails />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/career" element={<Career />} />
+          <Route path="/about" element={<About title="About | Netcore Nepal"/>} />
+          <Route path="/contact" element={<Contact title="Contact | Netcore Nepal"/>} />
+          <Route path="/career" element={<Career title="Career | Netcore Nepal" />} />
         </Routes>
       </main>
       <Footer />

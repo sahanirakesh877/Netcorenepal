@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <>
       {/* <Banner /> */}
-    
+
       <VideoBanner/>
       <AboutComp />
      
